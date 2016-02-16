@@ -23,7 +23,12 @@ module.exports = function (grunt) {
       tasks: ['test']
     }
   });
-
+  
+  grunt.event.on('watch', function(action, filepath, target) {
+    grunt.log.writeln(target + ': ' + filepath + ' has ' + action);
+  
+    
+  });
   // load all grunt tasks
   require('matchdep').filterDev(['grunt-*', '!grunt-cli']).forEach(grunt.loadNpmTasks);
 
