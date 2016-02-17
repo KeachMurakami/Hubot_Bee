@@ -15,8 +15,8 @@
 #   MurakamiKeach <m.keach.11@gmail.com>
 
 module.exports = (robot) ->
-  robot.respond /hello/, (res) ->
-    res.reply "hello!"
+  robot.respond /コーヒー/, (res) ->
+    res.reply "飲みますか!"
 
   robot.hear /orly/, ->
     res.send "yarly"
