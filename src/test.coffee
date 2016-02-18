@@ -15,8 +15,5 @@
 #   MurakamiKeach <m.keach.11@gmail.com>
 
 module.exports = (robot) ->
-  robot.respond /コーヒー/, (res) ->
-    res.reply "自分で淹れてください"
-
-  robot.hear /orly/, ->
-    res.send "yarly"
+  robot.respond /(.*)どこ？/, (res) ->
+    res.reply "〜はMMDD時点ではあそこにありました。"
